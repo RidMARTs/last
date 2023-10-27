@@ -1,0 +1,146 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgba(244, 237, 244, 0.793);
+    font-family: sans-serif;
+}
+
+.menu{
+    background-color: aqua;
+    text-align: center;
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(22, 15, 15);
+}
+
+.menu ul li{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(65, 23, 23);
+    font-weight: 600;
+}
+
+.don, .menu ul li:hover{
+    background-color: rgba(244, 237, 244, 0.839);
+    border-radius: 5px;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.menu ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color:aqua;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.menu ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .sub-menu ul li a:hover{
+    color: white;
+}
+
+.headings{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    place-items: center;
+    padding: 20px;
+    background: aqua;
+    margin-bottom: 15px;
+}
+
+.iphone-15{
+    display: flex;
+    /* grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+.box5{
+    height: 400px;
+    width: 200px;
+    background-color: rgba(218, 203, 218, 0.839);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+button{
+    width: 200px;
+    height: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    background: rgb(255, 140, 0);
+    color: white;
+    border-radius: 5px;
+    /* position: end; */
+}
+
+a{
+    text-decoration: none;
+    color: rgb(151, 149, 149);
+    font-size: 13px;
+}
+
+.box5 a:hover{
+    height: 410px;
+    width: 210px;
+}
+
+.info-img{
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    margin-left: 23px;
+    /* padding-bottom: 20px; */
+    
+}
+
+#info{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(71, 71, 71);
+    /* justify-content: space-around; */
+    
+}
+
